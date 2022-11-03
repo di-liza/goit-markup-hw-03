@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6, p{
 .list{
     list-style: none;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*Загальне для посилань*/
@@ -41,6 +43,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* Загальне для кнопок */
 .button {
+    display: inline-block;
     border: transparent;
     border-radius: 4px;
     font-family: inherit;
@@ -54,6 +57,7 @@ h1, h2, h3, h4, h5, h6, p{
 /* ----------HEADER---------- */
 .header{
     width: auto;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Лого */
@@ -68,8 +72,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 /*Навігація*/
-
 .header-nav{
+    display: flex;
+}
+
+.header-nav-pages{
     display: flex;
     align-items: center;
 }
@@ -101,9 +108,7 @@ h1, h2, h3, h4, h5, h6, p{
 .header-contact-items{
     display: flex;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 .header-contact-items .item{
     display: flex;
@@ -137,7 +142,9 @@ h1, h2, h3, h4, h5, h6, p{
 /* Герой */
 .hero{
     background-color: var(--accent-background-color);
+    text-align: center;
 }
+
 .hero-title{
     margin-bottom: 30px;
     color:var(--primary-white-color);
@@ -213,6 +220,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .team-items{
     display: flex;
+    justify-content: center;
 }
 .team-items .item {
     background-color: var(--primary-white-color);
@@ -220,8 +228,8 @@ h1, h2, h3, h4, h5, h6, p{
     padding-top: 0;
     padding-bottom: 30px;
 }
-.team-items .item:last-of-type{
-    margin-right: 30px;
+.team-items .item + .item{
+    margin-left: 30px;
 }
 .team .title{
     color: var(--title-text-color);
@@ -245,22 +253,37 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* --------ПОРТФОЛІО---------- */
 /* Кнопки*/
-.button-item{
+.porfolio{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.filter-item{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
+
 .button.secondary {
     display: block;
-    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
     color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.62;
     font-weight: 500;
     background-color: var(--second-accent-background-color);
 }
+.filter-item .main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
-.button-item .item + .item{
+.filter-item .item + .item{
     margin-left: 8px;
 }
 
@@ -315,8 +338,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* ----------FOOTER---------- */
 .bottom {
-    background-color: var(--title-text-color);
+    background-color: var(--accent-background-color);
     width: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-second-el {
@@ -327,6 +352,11 @@ h1, h2, h3, h4, h5, h6, p{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 20px;
+}
+
+.bottom-address .item + .item{
+    margin-top: 9px;
 }
 
 .location {
@@ -337,5 +367,3 @@ h1, h2, h3, h4, h5, h6, p{
     color: var(--link-address-bottom-color);
     letter-spacing: 0.03em;
 }
-
-

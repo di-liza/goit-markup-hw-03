@@ -215,6 +215,7 @@ img{
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    width: 1200px;
     margin: 0;
     padding: 0;
     margin-right: calc(-1 + var(--card-set-gap-margin));
@@ -247,6 +248,7 @@ img{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 1200px;
     margin: 0;
     padding: 0;
     margin-right: calc(-1 + var(--card-set-gap-margin));
@@ -270,7 +272,7 @@ img{
     padding: 0;
     margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.team-items > img{
+.team-items img{
     margin-bottom: 30px;
 }
 .team-items > .item {

@@ -241,10 +241,10 @@ img{
 }
 
 /* Чим ми займаємося */
-.task{
+.tasks{
     width: auto;
 }
-.task-items{
+.tasks-items{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -253,7 +253,7 @@ img{
     padding: 0;
     margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.task-items > .item{
+.tasks-items > .item{
     flex-basis: calc(100% / 3 var(--card-set-gap-margin));
     margin-right: var(--card-set-gap-margin);
 }

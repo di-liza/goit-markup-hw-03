@@ -1,4 +1,6 @@
 :root{
+    --card-set-gap-margin:30px;
+
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --link-address-bottom-color: rgba(255, 255, 255, 0.6);
@@ -321,14 +323,14 @@ img{
     width: 1200px;
     margin: 0;
     padding: 0;
-    margin-bottom: -30px;
-    margin-right: -30px;
+    margin-bottom: calc( -1 + var(--card-set-gap-margin));
+    margin-right: calc(-1 + var(--card-set-gap-margin));
 }
 .portfolio-card-set > .card{
     border-bottom: 1px solid #EEEEEE;
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    flex-basis: calc(100% / 3 var(--card-set-gap-margin));
+    margin-right: var(--card-set-gap-margin);
+    margin-bottom: var(--card-set-gap-margin);
     padding-bottom: 20px;
 }
 .card-set-link {

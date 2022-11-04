@@ -270,9 +270,8 @@ img{
     padding: 0;
     margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.team-items img{
+.team-items > img{
     margin-bottom: 30px;
-
 }
 .team-items > .item {
     flex-basis: calc(100% / 4 var(--card-set-gap-margin));
